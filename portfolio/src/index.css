@@ -100,7 +100,7 @@ header {
 }
 
 header a {
-  color: var(--ter);
+  color: var(--tertiary);
 }
 
 button {

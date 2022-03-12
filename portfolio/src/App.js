@@ -12,9 +12,8 @@ function App() {
       name: 'Portfolio',
       description: 'Here are a few of my projects',
     },
-    { name: 'Contact', description: 'Portraits of people in my life' },
     { name: 'Resume', description: 'Delicious delicacies' },
-   
+
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[1]);
