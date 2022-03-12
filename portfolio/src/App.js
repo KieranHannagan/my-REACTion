@@ -4,15 +4,16 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [categories] = useState([
-    { name: 'About Me', description: 'Delicious delicacies' },
+    { name: 'About Me', description: 'A little bit about myself.' },
     {
       name: 'Portfolio',
       description: 'Here are a few of my projects',
     },
-    { name: 'Resume', description: 'Delicious delicacies' },
+    { name: 'Resume', description: 'Here is my resume' },
 
   ]);
 
@@ -33,6 +34,7 @@ function App() {
         {!contactSelected ? (
           <>
             <Gallery currentCategory={currentCategory}></Gallery>
+            <Portfolio/>
           </>
         ) : (
           <ContactForm></ContactForm>
