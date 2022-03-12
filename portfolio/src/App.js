@@ -7,12 +7,11 @@ import Footer from './components/Footer';
 
 function App() {
   const [categories] = useState([
-    { name: 'About Me', description: 'Delicious delicacies' },
+    { name: 'About', description: 'Delicious delicacies' },
     {
       name: 'Portfolio',
       description: 'Here are a few of my projects',
     },
-    { name: 'Contact', description: 'Portraits of people in my life' },
     { name: 'Resume', description: 'Delicious delicacies' },
    
   ]);
