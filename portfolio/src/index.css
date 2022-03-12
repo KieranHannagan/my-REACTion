@@ -4,9 +4,12 @@ main {
   padding: 50px 30px;
 }
 
+width-max{
+  width: 100%;
+}
 
 :root {
-  --primary: #ECE2D0;
+  --primary: #f0e7d7;
   --secondary: #E1D2B7;
   --tertiary: #2F3E60;
   --light: #fafafa;
@@ -87,16 +90,17 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 header {
+  width: 100%;
   background: var(--secondary);
   border-bottom: 2px solid var(--light);
 }
 
 header a {
-  color: var(--darker);
+  color: var(--ter);
 }
 
 button {
@@ -149,12 +153,15 @@ input:focus {
 li {
   list-style: none;
 }
-
+nav {
+  color: (var(--tertiary));
+}
 nav a:hover {
   text-decoration: none;
 }
 
 nav li {
+
   cursor: pointer;
 }
 
@@ -165,12 +172,7 @@ textarea {
   padding: 5px;
 }
 
-.container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .flex-row {
   display: flex;
@@ -282,7 +284,7 @@ button {
 
 a {
   border-radius: 5px;
-  color: var(--primary);
+  color: var(--tertiary);
   font-weight: 600;
   padding: 2px 4px;
   margin-left: -2px;
@@ -300,9 +302,12 @@ a {
   padding: 1rem;
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
   background-color: var(--secondary);
 
   border-top: 3px solid var(--light);
+}
+
+footer a {
+  color: var(--tertiary);
 }
