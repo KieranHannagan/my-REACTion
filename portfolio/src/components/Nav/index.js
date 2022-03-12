@@ -16,7 +16,7 @@ function Nav(props) {
 
   return (
     <header className="d-flex px-3 ">
-      <div className='d-flex  width-max justify-content-between'>
+      <div className='d-flex  width-max justify-content-between mt-3'>
         <h2 className='d-flex  ' >
           <a data-testid="link" href="/">
             <span role="img" aria-label="camera"></span> Kieran Hannagan

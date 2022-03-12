@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
@@ -13,8 +12,7 @@ function App() {
       name: 'Portfolio',
       description: 'Here are a few of my projects',
     },
-    { name: 'Resume', description: 'Here is my resume' },
-
+    { name: 'Resume', description: 'Here is my resume' }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[1]);
@@ -22,7 +20,7 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
-    <div>
+    <div className='height-max'>
       <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
@@ -33,7 +31,6 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
             <Portfolio/>
           </>
         ) : (
