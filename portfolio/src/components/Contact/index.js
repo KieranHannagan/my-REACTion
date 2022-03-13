@@ -37,7 +37,7 @@ function ContactForm() {
   };
 
   return (
-    <section className='d-flex p-5'>
+    <section className=' contact-form d-flex p-5'>
       <h1 className='row m-2' data-testid="h1tag">Contact me</h1>
       <form className=' row m-2' id="contact-form" onSubmit={handleSubmit}>
         <div className='m-2'>

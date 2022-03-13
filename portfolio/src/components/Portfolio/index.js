@@ -37,29 +37,30 @@ function Portfolio() {
                         <p className="card-text">Come shop!</p>
                     </div>
                     <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/run-buddy">View on GitHub</a></li>
+                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/back-end-commerce">View on GitHub</a></li>
                     </ul>
                 </div>
 
                 <div className="card me-5 col ">
-                    <img src={require(`../../assets/img/3.jpeg`).default} className="card-img-top" alt="run-buddy" />
+                    <a href='https://sheltered-plains-19903.herokuapp.com/'><img src={require(`../../assets/img/3.jpeg`).default} className="card-img-top" alt="run-buddy" /></a>
                     <div className="card-body">
-                        <h5 className="card-title">Budget Tracker</h5>
-                        <p className="card-text">Track your spending.</p>
+                        <h5 className="card-title">Budget Tracker </h5>
+                        <p className="card-text">Track your spending.
+                        (click image for deployment)</p>
                     </div>
                     <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/run-buddy">View on GitHub</a></li>
+                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/track-my-budget">View on GitHub</a></li>
                     </ul>
                 </div>
 
                 <div className="card  col">
                     <img src={require(`../../assets/img/4.jpeg`).default} className="card-img-top" alt="run-buddy" />
                     <div className="card-body">
-                        <h5 className="card-title">Employee Handler</h5>
+                        <h5 className="card-title">Employee Tracker</h5>
                         <p className="card-text">Your workforce in one spot.</p>
                     </div>
                     <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/run-buddy">View on GitHub</a></li>
+                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/track-my-employees">View on GitHub</a></li>
                     </ul>
                 </div>
                 <div className="card ms-5 col">
@@ -69,7 +70,7 @@ function Portfolio() {
                         <p className="card-text">Your team, your way.</p>
                     </div>
                     <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/run-buddy">View on GitHub</a></li>
+                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/heres-the-team">View on GitHub</a></li>
                     </ul>
                 </div>
             </div>
