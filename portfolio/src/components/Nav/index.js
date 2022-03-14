@@ -1,19 +1,18 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
   const {
-    categories = [],
-    setCurrentCategory,
+    resumeSelected,
+    setResumeSelected,
+    aboutMeSelected,
+    setAboutSelected,
+    portfolioSelected,
+    setPortfolioSelected,
     contactSelected,
-    currentCategory,
-    setContactSelected,
+    setContactSelected
   } = props;
 
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
-
+  
   return (
     <header className="d-flex px-3 ">
       <div className='d-flex  width-max justify-content-between mt-3'>
@@ -22,27 +21,21 @@ function Nav(props) {
             <span role="img" aria-label="camera"></span> Kieran Hannagan
           </a>
         </h2>
-        <nav className='d-flex justify-content-end p-3 '>
+        <nav className='d-flex justify-content-end p-3'>
           <ul className="d-flex ">
             <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-              <span onClick={() => setContactSelected(true)}>Contact</span>
+              <span onClick={() => setContactSelected(true) }>Contact</span>
             </li>
-            {categories.map((category) => (
-              <li
-                className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'
-                  }`}
-                key={category.name}
-              >
-                <span
-                  onClick={() => {
-                    setCurrentCategory(category);
-                    setContactSelected(false);
-                  }}
-                >
-                  {capitalizeFirstLetter(category.name)}
-                </span>
-              </li>
-            ))}
+            <li className={`mx-2 ${!aboutMeSelected}`}>
+              <span onClick={() => setAboutSelected(true)}>About Me</span>
+            </li>
+            <li className={`mx-2 ${!portfolioSelected}`}>
+              <span onClick={() => setPortfolioSelected(true)}>Portfolio</span>
+            </li>
+            <li className={`mx-2 ${!resumeSelected}`}>
+              <span onClick={() => setResumeSelected(true)}>Resume</span>
+            </li>
+
           </ul>
         </nav>
       </div>
