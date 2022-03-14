@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 
+
 function App() {
   const [categories] = useState([
     { name: 'About Me', description: 'A little bit about myself.' },
@@ -28,16 +29,17 @@ function App() {
 
   return (
     <div className='height-max'>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        setResumeSelected={setResumeSelected}
-        setAboutSelected={setAboutSelected}
-        setPortfolioSelected={setPortfolioSelected}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
+
+        <Nav
+          categories={categories}
+          setCurrentCategory={setCurrentCategory}
+          setResumeSelected={setResumeSelected}
+          setAboutSelected={setAboutSelected}
+          setPortfolioSelected={setPortfolioSelected}
+          currentCategory={currentCategory}
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}
+        ></Nav>
       <main>
         {!contactSelected ? (<Portfolio />) : contactSelected ? (<ContactForm />) : resumeSelected ? (<Resume />) : aboutSelected ? (<About />) : portfolioSelected ? (<Portfolio />) : <About />}
       </main>
