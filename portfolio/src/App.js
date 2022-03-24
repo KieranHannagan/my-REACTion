@@ -30,6 +30,7 @@ function App() {
   return (
     <div className='height-max'>
 
+
         <Nav
           categories={categories}
           setCurrentCategory={setCurrentCategory}

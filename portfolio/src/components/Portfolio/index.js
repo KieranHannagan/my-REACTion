@@ -11,10 +11,10 @@ function Portfolio() {
             {/* Cards for projects */}
             <div className=' d-flex row row-cols-4 row-cols-md-4 g-3 container-fluid justify-content-center'>
                 <div className="card me-5 col">
-                    <img src={require(`../../assets/img/0.jpeg`).default} className="card-img-top" alt="run-buddy" />
+                <a href='https://pure-harbor-43860.herokuapp.com/'><img src={require(`../../assets/img/0.jpeg`).default} className="card-img-top" alt="run-buddy" /></a>
                     <div className="card-body">
-                        <h5 className="card-title">Note Taker</h5>
-                        <p className="card-text">Write down an idea!</p>
+                        <h5 className="card-title">E-PillBox</h5>
+                        <p className="card-text">Keep track of your meds! (Click image to visit site)</p>
                     </div>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item"><a href="https://github.com/KieranHannagan/take-some-notes">View on GitHub</a></li>
@@ -42,10 +42,10 @@ function Portfolio() {
                 </div>
 
                 <div className="card me-5 col ">
-                    <a href='https://sheltered-plains-19903.herokuapp.com/'><img src={require(`../../assets/img/3.jpeg`).default} className="card-img-top" alt="run-buddy" /></a>
+                    <a href='https://pure-harbor-43860.herokuapp.com/'><img src={require(`../../assets/img/3.jpeg`).default} className="card-img-top" alt="run-buddy" /></a>
                     <div className="card-body">
                         <h5 className="card-title">Budget Tracker </h5>
-                        <p className="card-text">Track your spending.
+                        <p className="card-text">Track your budget.
                         (click image for deployment)</p>
                     </div>
                     <ul className="list-group list-group-flush">
