@@ -8,16 +8,6 @@ import Resume from './components/Resume';
 
 
 function App() {
-  const [categories] = useState([
-    { name: 'About Me', description: 'A little bit about myself.' },
-    {
-      name: 'Portfolio',
-      description: 'Here are a few of my projects',
-    },
-    { name: 'Resume', description: 'Here is my resume' }
-  ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[1]);
 
   const [contactSelected, setContactSelected] = useState(false);
 
@@ -29,15 +19,10 @@ function App() {
 
   return (
     <div className='height-max'>
-
-
         <Nav
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
           setResumeSelected={setResumeSelected}
           setAboutSelected={setAboutSelected}
           setPortfolioSelected={setPortfolioSelected}
-          currentCategory={currentCategory}
           contactSelected={contactSelected}
           setContactSelected={setContactSelected}
         ></Nav>
