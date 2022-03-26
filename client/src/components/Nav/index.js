@@ -1,14 +1,37 @@
-import React, { useEffect } from 'react';
-// import Portfolio from '..Portfolio/';
-// import Resume from './components/Resume';
+import React from 'react';
+
 import {
-  BrowserRouter as Router,
-  // Switch,
-  // Route,
-  Link
+  BrowserRouter as Router
 } from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
+  const {
+    setAboutSelected,
+    aboutSelected,
+    setPortfolioSelected,
+    portfolioSelected,
+    setResumeSelected,
+    resumeSelected,
+    setContactSelected,
+    contactSelected
+  } = props;
+
+  function resetStates(event) {
+    setAboutSelected(false);
+    setPortfolioSelected(false);
+    setResumeSelected(false);
+    setContactSelected(false);
+    if (event.target.textContent === "About") {
+      setAboutSelected(true);
+    } else if (event.target.textContent === "Portfolio") {
+      setPortfolioSelected(true);
+    } else if (event.target.textContent === "Resume") {
+      setResumeSelected(true);
+    } else if (event.target.textContent === "Contact") {
+      setContactSelected(true);
+    }
+  }
+
   return (
     <Router>
       <header className="d-flex px-3 ">
@@ -19,38 +42,18 @@ function Nav() {
             </a>
           </h2>
           <nav className='d-flex justify-content-end p-3'>
-            <ul className="d-flex ">
-              <li className={`mx-2`}>
-                <Link to="/contact" >Contact</Link>
-              </li>
-              <li className={`mx-2`}>
-                <Link to="/about" >About Me</Link>
-              </li>
-              <li className={`mx-2`}>
-                <Link to="/portfolio" >Portfolio</Link>
-              </li>
-              <li className={`mx-2`}>
-                <Link to="/resume">Resume</Link>
-              </li>
-
+            <ul className="d-flex justify-content-between">
+              <li className={`mx-2 ${aboutSelected && "active"}`} onClick={(event) => resetStates(event)}>About</li>
+              <li className={`mx-2 ${portfolioSelected && "active"}`} onClick={(event) => resetStates(event)}>Portfolio</li>
+              <li className={`mx-2 ${resumeSelected && "active"}`} onClick={(event) => resetStates(event)}>Resume</li>
+              <li className={`mx-2 ${contactSelected && "active"}`} onClick={(event) => resetStates(event)}>Contact</li>
             </ul>
           </nav>
-          
         </div>
       </header>
     </Router>
   );
-  function ContactForm() {
-    return <h2>Contact</h2>;
-  }
 
-  function About() {
-    return <h2>About</h2>;
-  }
-
-  function Users() {
-    return <h2>Users</h2>;
-  }
 }
 
 export default Nav;
