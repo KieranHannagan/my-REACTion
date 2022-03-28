@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/my-REACTion/static/css/main.d91c116b.chunk.css",
-    "main.js": "/my-REACTion/static/js/main.cd8f0966.chunk.js",
-    "main.js.map": "/my-REACTion/static/js/main.cd8f0966.chunk.js.map",
-    "runtime-main.js": "/my-REACTion/static/js/runtime-main.c3120c69.js",
-    "runtime-main.js.map": "/my-REACTion/static/js/runtime-main.c3120c69.js.map",
-    "static/js/2.363b29c3.chunk.js": "/my-REACTion/static/js/2.363b29c3.chunk.js",
-    "static/js/2.363b29c3.chunk.js.map": "/my-REACTion/static/js/2.363b29c3.chunk.js.map",
-    "static/js/3.c19ea0ec.chunk.js": "/my-REACTion/static/js/3.c19ea0ec.chunk.js",
-    "static/js/3.c19ea0ec.chunk.js.map": "/my-REACTion/static/js/3.c19ea0ec.chunk.js.map",
+    "main.js": "/my-REACTion/static/js/main.b27acf9e.chunk.js",
+    "main.js.map": "/my-REACTion/static/js/main.b27acf9e.chunk.js.map",
+    "runtime-main.js": "/my-REACTion/static/js/runtime-main.b32d36dc.js",
+    "runtime-main.js.map": "/my-REACTion/static/js/runtime-main.b32d36dc.js.map",
+    "static/js/2.7936ff6b.chunk.js": "/my-REACTion/static/js/2.7936ff6b.chunk.js",
+    "static/js/2.7936ff6b.chunk.js.map": "/my-REACTion/static/js/2.7936ff6b.chunk.js.map",
+    "static/js/3.246e2db9.chunk.js": "/my-REACTion/static/js/3.246e2db9.chunk.js",
+    "static/js/3.246e2db9.chunk.js.map": "/my-REACTion/static/js/3.246e2db9.chunk.js.map",
     "index.html": "/my-REACTion/index.html",
     "static/css/main.d91c116b.chunk.css.map": "/my-REACTion/static/css/main.d91c116b.chunk.css.map",
-    "static/js/2.363b29c3.chunk.js.LICENSE.txt": "/my-REACTion/static/js/2.363b29c3.chunk.js.LICENSE.txt",
+    "static/js/2.7936ff6b.chunk.js.LICENSE.txt": "/my-REACTion/static/js/2.7936ff6b.chunk.js.LICENSE.txt",
     "static/media/0.jpeg": "/my-REACTion/static/media/0.03ec7490.jpeg",
     "static/media/1.jpeg": "/my-REACTion/static/media/1.ca875feb.jpeg",
     "static/media/2.jpeg": "/my-REACTion/static/media/2.63e0adc3.jpeg",
@@ -21,9 +21,9 @@
     "static/media/cover-image.533ae8f6.jpg": "/my-REACTion/static/media/cover-image.533ae8f6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3120c69.js",
-    "static/js/2.363b29c3.chunk.js",
+    "static/js/runtime-main.b32d36dc.js",
+    "static/js/2.7936ff6b.chunk.js",
     "static/css/main.d91c116b.chunk.css",
-    "static/js/main.cd8f0966.chunk.js"
+    "static/js/main.b27acf9e.chunk.js"
   ]
 }
