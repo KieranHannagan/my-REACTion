@@ -235,12 +235,27 @@ textarea {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
 }
-
+/* CARDS */
 .card {
   width: 25%;
   text-align: center;
+  border-radius: 15%;
 }
 
+.rounded{
+  border-radius: 30% !important;
+  padding-top: 1rem;
+  opacity: 0.8;
+
+}
+.list-group-item{
+  background-color: transparent;
+
+}
+
+.card-title{
+  color: #2F3E60;
+}
 .img-thumbnail {
   width: auto;
   height: 300px;
@@ -325,8 +340,18 @@ footer a {
 
 /* gradient */
 .gradient {
-    font-size: 1.5rem;
     background-image: linear-gradient(to right, #ba81cf, #6886d4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  /* Resume Card */
+.full-w{
+  width: 100%;
+}
+
+  .res-card-title{
+    background-color: var(--light);
+    border-radius: 3rem;
+    padding: 2rem;
   }

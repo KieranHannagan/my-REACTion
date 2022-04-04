@@ -10,8 +10,8 @@ function Portfolio() {
             </div>
             {/* Cards for projects */}
             <div className=' d-flex row row-cols-4 row-cols-md-4 g-3 container-fluid justify-content-center'>
-                <div className="card me-5 col">
-                <a href='https://pure-harbor-43860.herokuapp.com/'><img src={require(`../../assets/img/0.jpeg`).default} className="card-img-top" alt="run-buddy" /></a>
+                <div className="card me-5 col ">
+                <a href='https://pure-harbor-43860.herokuapp.com/'><img src={require(`../../assets/img/0.jpeg`).default} className="card-img-top rounded" alt="run-buddy" /></a>
                     <div className="card-body">
                         <h5 className="card-title">E-PillBox</h5>
                         <p className="card-text">Keep track of your meds! (Click image to visit site)</p>
@@ -21,7 +21,7 @@ function Portfolio() {
                     </ul>
                 </div>
                 <div className="card  col">
-                    <img src={require(`../../assets/img/1.jpeg`).default} className="card-img-top" alt="run-buddy" />
+                    <img src={require(`../../assets/img/1.jpeg`).default} className="card-img-top rounded" alt="run-buddy" />
                     <div className="card-body">
                         <h5 className="card-title">Run Buddy</h5>
                         <p className="card-text">Everyone's favorite fitness companion</p>
@@ -31,7 +31,7 @@ function Portfolio() {
                     </ul>
                 </div>
                 <div className="card ms-5 col">
-                    <img src={require(`../../assets/img/2.jpeg`).default} className="card-img-top" alt="run-buddy" />
+                    <img src={require(`../../assets/img/2.jpeg`).default} className="card-img-top rounded" alt="run-buddy" />
                     <div className="card-body">
                         <h5 className="card-title">E-Commerce Back-end</h5>
                         <p className="card-text">Come shop!</p>
@@ -42,7 +42,7 @@ function Portfolio() {
                 </div>
 
                 <div className="card me-5 col ">
-                    <a href='https://pure-harbor-43860.herokuapp.com/'><img src={require(`../../assets/img/3.jpeg`).default} className="card-img-top" alt="run-buddy" /></a>
+                    <a href='https://pure-harbor-43860.herokuapp.com/'><img src={require(`../../assets/img/3.jpeg`).default} className="card-img-top rounded" alt="run-buddy" /></a>
                     <div className="card-body">
                         <h5 className="card-title">Budget Tracker </h5>
                         <p className="card-text">Track your budget.
@@ -54,7 +54,7 @@ function Portfolio() {
                 </div>
 
                 <div className="card  col">
-                    <img src={require(`../../assets/img/4.jpeg`).default} className="card-img-top" alt="run-buddy" />
+                    <img src={require(`../../assets/img/4.jpeg`).default} className="card-img-top rounded" alt="run-buddy" />
                     <div className="card-body">
                         <h5 className="card-title">Employee Tracker</h5>
                         <p className="card-text">Your workforce in one spot.</p>
@@ -64,7 +64,7 @@ function Portfolio() {
                     </ul>
                 </div>
                 <div className="card ms-5 col">
-                    <img src={require(`../../assets/img/5.jpeg`).default} className="card-img-top" alt="run-buddy" />
+                    <img src={require(`../../assets/img/5.jpeg`).default} className="card-img-top rounded" alt="run-buddy" />
                     <div className="card-body">
                         <h5 className="card-title">Team Manager</h5>
                         <p className="card-text">Your team, your way.</p>
