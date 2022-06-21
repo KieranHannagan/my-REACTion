@@ -17,7 +17,7 @@ function Portfolio() {
                         <p className="card-text">Keep track of your meds! (Click image to visit site)</p>
                     </div>
                     <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/take-some-notes">View on GitHub</a></li>
+                        <li className="list-group-item"><a href="https://github.com/KieranHannagan/e-pill-box">View on GitHub</a></li>
                     </ul>
                 </div>
                 <div className="card  col">
